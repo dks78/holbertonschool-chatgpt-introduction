@@ -21,17 +21,19 @@
 
 <h2>Click the button to change the background color</h2>
 
+<!-- Correction de l'ID du bouton -->
 <button id="colorButton">Change Color</button>
 
 <script>
+    // Assurez-vous que l'ID dans le script corresponde à celui du HTML
     document.getElementById("colorButton").addEventListener("click", function() {
         changeBackgroundColor();
     });
 
     function changeBackgroundColor() {
-        // Generate a random color
+        // Générer une couleur aléatoire
         var randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
-        // Change the background color of the body
+        // Changer la couleur de fond du corps
         document.body.style.backgroundColor = randomColor;
     }
 </script>
